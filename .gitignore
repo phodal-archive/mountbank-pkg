@@ -123,3 +123,4 @@ release-builds/
 index-linux
 index-macos
 index-win.exe
+dist/
