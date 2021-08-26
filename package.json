@@ -4,7 +4,7 @@
   "description": "",
   "bin": "index.js",
   "scripts": {
-    "package": "pkg package.json --options expose-gc --debug >output.log"
+    "package": "pkg package.json --options expose-gc --debug --compress GZip  >output.log"
   },
   "dependencies": {
     "mountebank": "^2.4.0"
