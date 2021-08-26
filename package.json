@@ -2,10 +2,20 @@
   "name": "mountbank-pkg",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "bin": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "package": "pkg index.js --options expose-gc"
   },
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "mountebank": "^2.4.0"
+  },
+  "pkg": {
+    "targets": [
+      "node14"
+    ]
+  },
+  "devDependencies": {
+    "fs-extra": "^10.0.0",
+    "pkg": "^5.3.1"
+  }
 }
