@@ -134,6 +134,7 @@ function serverAt (options) {
 const server = serverAt({
     port: 5527,
     ipWhitelist: [],
-    pidfile: "mb.pid"
+    pidfile: "mb.pid",
+    // formatter: "mountebank-formatters"
 });
 server.restart()

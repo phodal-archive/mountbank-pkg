@@ -4,17 +4,18 @@
   "description": "",
   "bin": "index.js",
   "scripts": {
-    "package": "pkg index.js --options expose-gc"
+    "package": "pkg package.json --options expose-gc --debug >output.log"
   },
   "dependencies": {
     "mountebank": "^2.4.0"
   },
   "pkg": {
-    "assets": "./node_modules/mountebank/src/views/**/*",
+    "assets": [
+      "./node_modules/mountebank/src/views/**/*",
+      "./node_modules/mountebank/src/public/**/*"
+    ],
     "outputPath": "dist",
-    "targets": [
-      "node14"
-    ]
+    "targets": []
   },
   "devDependencies": {
     "fs-extra": "^10.0.0",
